@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+    background-color: #222222;
+    color: #A9A9A9;
+    padding: 15px 0 15px 30px;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 60%;
+}
+
+.container__content__title {
+    display: flex;
+    font-size: 26px;
+    color: #222222;
+    margin-bottom: 25px;
+}
+
+.container__content__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__content__form__block {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.container__content__form__block__input {
+    display: flex;
+    margin-right: 30px;
+    margin-left: 50px;
+    width: 75%;
+    outline: none;
+    padding-left: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+}
+
+.container__content__form__block__input::placeholder {
+    color: #9094A9;
+}
+
+.container__content__form__block__input:focus {
+    border: 1px solid #1877F2;
+    border-radius: 3px;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #1877F2;
+}
+
+.container__content__form__block__input:focus::placeholder {
+    opacity: 0.5;
+}
+
+.container__content__form__block__button {
+    display: flex;
+    background-color: #337AB7;
+    color: #fff;
+    border-style: none;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.container__content__form__block__button:active {
+    opacity: 0.5;
+}
+
+.container__content__form__list {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px 20px 10px;
+    border-top: 0.25px solid #dddfe2;
+    border-bottom: 0.25px solid #dddfe2;
+}
+
+.li__item {
+    display: flex;
+    align-items: center;
+}
+
+.cross{
+    text-decoration: line-through;
+}
+
+.deleteBtn {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    justify-content: flex-end;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox {
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.deleteBtn:hover {
+    opacity: 0.5;
+}
+
+.trash {
+    width: 20px;
+    height: 20px;
+    fill: red;
+}
